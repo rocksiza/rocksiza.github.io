@@ -1,15 +1,24 @@
 body{
     background: #3399ff;
-  }
-  
-  
-  .circle{
+    z-index: -1;  /* Updated line */
+    position: relative; /* New line */
+}
+
+.ripple-background {
+    position: absolute; /* New line */
+    width: 100%; /* New line */
+    height: 100%; /* New line */
+    overflow: hidden; /* New line */
+    z-index: 1; /* New line */
+}
+
+.circle{
     position: absolute;
     border-radius: 50%;
     background: white;
     animation: ripple 15s infinite;
     box-shadow: 0px 0px 1px 0px #508fb9;
-  }
+}
   
   .small{
     width: 200px;
@@ -89,6 +98,8 @@ body{
 }
 
 .container {
+    position: relative; /* New line */
+    z-index: 1; /* New line */
     flex-wrap: wrap;
     justify-content: space-around;
     overflow: auto;

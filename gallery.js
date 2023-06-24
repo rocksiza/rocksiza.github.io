@@ -20,15 +20,22 @@ document.addEventListener('DOMContentLoaded', function() {
 function loadSingleImage(src) {
     const container = document.querySelector('.container');
     container.innerHTML = '';
+    
     const img = document.createElement('img');
     img.src = src;
-    img.style.width = 'auto'; // These lines remove the size restrictions
-    img.style.height = 'auto'; // on the clicked image.
+    img.style.width = 'auto';
+    img.style.height = 'auto';
     container.appendChild(img);
 
-    const returnButton = document.createElement('a');
-    returnButton.textContent = 'Return to Gallery';
-    returnButton.className = 'pixel-button';
-    returnButton.href = 'gallery.html';
-    container.appendChild(returnButton);
+    const returnToGalleryButton = document.createElement('a');
+    returnToGalleryButton.textContent = 'Return to Gallery';
+    returnToGalleryButton.className = 'pixel-button';
+    returnToGalleryButton.href = 'gallery.html';
+    container.appendChild(returnToGalleryButton);
+
+    const returnToMainButton = document.createElement('a');
+    returnToMainButton.textContent = 'Return to Main Page';
+    returnToMainButton.className = 'pixel-button';
+    returnToMainButton.href = 'index.html'; // Adjust this link to point to your main page.
+    container.appendChild(returnToMainButton);
 }

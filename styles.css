@@ -1,0 +1,120 @@
+body {
+    background-color: #000;
+    background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+                      radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+                      radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px);
+    background-size: 550px 550px, 350px 350px, 250px 250px;
+    background-position: 0 0, 40px 60px, 130px 270px;
+    animation: stars 40s linear infinite;
+    font-family: 'Press Start 2P', cursive;
+    color: #0f0;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@keyframes stars {
+    100% {
+        background-position: 10000px 10000px, 4000px 4000px, 3000px 3000px;
+    }
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    max-width: 60ch;
+    margin: 0 auto 2em;
+}
+
+a, .pixel-button {
+    display: inline-block;
+    text-decoration: none;
+    border: solid 3px #0f0;
+    padding: 0.2em 1em;
+    color: #0f0;
+    transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+a:hover, .pixel-button:hover {
+    background-color: #0f0;
+    color: #000;
+}
+
+.pixel-button {
+    font-family: inherit;
+    font-size: 1rem;
+    background: none;
+    cursor: pointer;
+}
+
+.container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.link-images {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.link-images a {
+    border: none;
+}
+
+.link-images .top-image {
+    z-index: 2;
+    position: relative;
+    margin-bottom: 20px; /* add some space between the images */
+}
+
+.link-images .bottom-image {
+    position: absolute;
+    z-index: 1;
+    top: 50px; /* position the bottom image below the top image */
+}
+
+.image-bottom-right {
+    position: fixed;
+    right: 0;
+}
+
+.image-link img {
+    border: none;
+    bottom: 50px; /* Raise the position from the bottom of the page */
+}
+
+.image-link {
+    position: fixed;
+    right: 2%; /* Move the image to the left */
+    bottom: 150px; /* Raise the position from the bottom of the page */
+    border: none;
+}
+
+.speechbubble {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 20vw; /* This will make the image 5% of the viewport's width */
+}
+
+img[src='speechbubble.jpg'] {
+    bottom: 0;
+    width: 50px; /* Change this to the desired width */
+    height: 50px; /* Change this to the desired height */
+}
+
+

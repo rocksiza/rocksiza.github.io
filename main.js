@@ -1,10 +1,13 @@
-document.querySelector('.pixel-button').addEventListener('click', function() {
-    const container = document.querySelector('.container');
-    container.innerHTML = '';
-
-    for(let i = 1; i <= 325; i++) { // Assuming you have 10 images in the directory.
-        const img = document.createElement('img');
-        img.src = `raveflyers/image (${i}).jpg`; // Update this according to your image file names.
-        container.appendChild(img);
+document.querySelector('#psychedelic-button').addEventListener('click', function() {
+    // Get body element
+    var body = document.querySelector('body');
+    
+    // Check if body already has the class
+    if (body.classList.contains('psychedelic')) {
+        // If it does, remove it
+        body.classList.remove('psychedelic');
+    } else {
+        // If it doesn't, add it
+        body.classList.add('psychedelic');
     }
 });

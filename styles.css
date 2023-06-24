@@ -23,6 +23,20 @@ body {
     }
 }
 
+@keyframes psychedelic {
+    0%   {background-color: #ff0000;}
+    25%  {background-color: #00ff00;}
+    50%  {background-color: #0000ff;}
+    75%  {background-color: #ff00ff;}
+    100% {background-color: #ff0000;}
+}
+
+.psychedelic {
+    animation-name: psychedelic;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
 h1 {
     font-size: 2em;
 }

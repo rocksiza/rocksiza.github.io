@@ -49,11 +49,17 @@ p {
 a, .pixel-button {
     display: inline-block;
     text-decoration: none;
-    border: solid 3px #0f0;
+    border: none; /* Removes border */
+    outline: none; /* Removes outline */
     padding: 0.2em 1em;
     color: #0f0;
     transition: background-color 0.3s linear, color 0.3s linear;
 }
+
+a img, .pixel-button img {
+    border: none; /* Removes border around images */
+}
+
 
 a:hover, .pixel-button:hover {
     background-color: #0f0;

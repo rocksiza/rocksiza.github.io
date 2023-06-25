@@ -111,12 +111,24 @@ a:hover, .pixel-button:hover {
     bottom: 50px; /* Raise the position from the bottom of the page */
 }
 
-.image-link {
+/* ... other styles ... */
+
+.image-link-right {
     position: fixed;
-    right: 2%; /* Move the image to the left */
+    right: 2%; /* Keep the image to the right */
     bottom: 150px; /* Raise the position from the bottom of the page */
     border: none;
 }
+
+.image-link-left {
+    position: fixed;
+    left: 2%; /* Move the image to the left */
+    bottom: -10px; /* Raise the position from the bottom of the page */
+    border: none;
+}
+
+/* ... other styles ... */
+
 
 .speechbubble {
     position: fixed;

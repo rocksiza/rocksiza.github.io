@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="destiny.css">
 </head>
 <body>
     <div id="image-box">
         <img id="main-image" src="raids/ron.jpg" alt="Image 1">
     </div>
-    <div id="text-box">
-        <p id="main-text">This is the text for image 1.</p>
+    <div id="label-box"></div>
+    <div id="button-container"> <!-- A new div to contain the buttons and enable flexbox alignment -->
+        <button id="prev-button"><img src="left-chevron.png" alt="Previous" width="30px"></button> <!-- Added width -->
+        <button id="next-button"><img src="right-chevron.png" alt="Next" width="30px"></button> <!-- Added width -->
     </div>
-    <button id="prev-button">Previous</button>
-    <button id="next-button">Next</button>
-
+    
     <script src="destiny.js"></script>
 </body>
 </html>

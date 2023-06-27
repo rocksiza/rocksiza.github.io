@@ -9,6 +9,19 @@ const labels = [
     ["Flawless", "Solo"]
     // add more label arrays as needed
 ];
+
+const timelabels = [
+    ["0:00"],
+    ["0:00"],
+    ["0:00"],
+    ["0:00"],
+    ["0:01"],
+    ["0:00"],
+    ["0:00"]
+    
+    // add more label arrays as needed
+];
+
 const backgrounds = ["waves/ron.png", "waves/kf.png", "waves/vow.png", "waves/vog.png", "waves/dsc.png", "waves/gos.png", "waves/lw.png"];
 let index = 0;
 
@@ -30,10 +43,27 @@ function updateContent() {
     let labelBox = document.getElementById('label-box');
     labelBox.innerHTML = '';  // Clear out the current labels
 
+    let timelabelBox = document.getElementById('time-label-box');
+    timelabelBox.innerHTML = '';  // Clear out the current labels
+
     for (let label of labels[index]) {
         let button = document.createElement('button');
         button.innerText = label;
         button.className = 'label-button';
         labelBox.appendChild(button);
     }
+
+    for (let label of timelabels[index]) {
+        let button = document.createElement('button');
+        button.innerText = label;
+        button.className = 'timelabel-button';
+        timelabelBox.appendChild(button);
+    }
 }
+
+updateContent();
+
+document.getElementById('back-button').onclick = function() {
+    window.location.href = 'index.html';
+};
+

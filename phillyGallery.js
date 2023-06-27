@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const container = document.querySelector('.container');
 
-    for(let i = 1; i <= 325; i++) {
+    for(let i = 1; i <= 48; i++) {
         const img = document.createElement('img');
-        img.src = `raveflyers/image (${i}).jpg`;
+        img.src = `phlraves/image (${i}).jpg`;
         img.addEventListener('click', function() {
             loadSingleImage(this.src);
         });
@@ -30,7 +30,7 @@ function loadSingleImage(src) {
     const returnToGalleryButton = document.createElement('a');
     returnToGalleryButton.textContent = 'Return to Gallery';
     returnToGalleryButton.className = 'pixel-button';
-    returnToGalleryButton.href = 'gallery.html';
+    returnToGalleryButton.href = 'phillyGallery.html';
     container.appendChild(returnToGalleryButton);
 
     const returnToMainButton = document.createElement('a');

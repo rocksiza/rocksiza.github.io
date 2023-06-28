@@ -1,7 +1,15 @@
+@font-face {
+  font-family: 'Futura Medium';
+  src: url('Futura.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
     background-image: url('waves/ron.png');
-    background-size: 100% 100%; /* Stretch the image to exactly fill the width and height of the body */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; 
+    background-repeat: no-repeat; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,10 +19,56 @@ body {
     transition: background-image 0.3s linear;
 }
 
-#image-box, #text-box {
+#image-box, #label-box {
     margin: 1em;
 }
 
 #prev-button, #next-button {
     margin: 0.5em;
+}
+
+.label-button {
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 1px solid black;
+    background-color: gold; 
+    color: white; /* Text color */
+    font-family: 'Futura Medium', cursive; /* Font family */
+    font-weight: bold; /* Font boldness */
+}
+
+.timelabel-button {
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 1px solid black;
+    background-color: purple; 
+    color: white; /* Text color */
+    font-family: 'Futura Medium', cursive; /* Font family */
+    font-weight: bold; /* Font boldness */
+}
+
+#prev-button, #next-button {
+    background: transparent;
+    border: none;
+    padding: 0; /* Remove padding */
+}
+
+#button-container {
+    display: flex; /* Display the buttons side by side */
+    justify-content: center; /* Center the buttons */
+}
+
+#back-button-container {
+    display: flex; 
+    justify-content: center; 
+}
+
+#back-button {
+    margin: 0.5em;
+    background-color: gold;
+    border: none;
+    padding: 0.5em;
+    font-family: 'Futura Medium', cursive;
+    font-weight: bold;
+    color: white;
 }

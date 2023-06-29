@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ramblings</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <style>
+        .hidden-content {
+            display: none;
+        }
+        .post-content {
+            display: flex;
+        }
+        .post-text {
+            flex: 1;
+        }
+        .post-images img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ramblings.html">Ramblings</a></li>
+            <li><a href="taekwondo.html">Taekwondo</a></li>
+        </ul>
+    </nav>
+    <h1>Ramblings</h1>
+    <div class="category-container">
+        <article>
+            <h2 class="post-link">Scene</h2>
+            <div class="post-content hidden-content">
+                <div class="post-text">
+                    <h3>Let's talk about the scene</h3>
+                    <p>Let's talk about the scene where it is right now. I'm not confident or very optimistic about where we are right now. There's a lot of growth happening in Philly. It's fantastic, right? But it feels to me like a lot of shows are getting cannibalized by other sets, right? And, yeah, I mean, I want to avoid a situation where we have one person writing the whole scene. It's not good. But I think multiple people, so disconnected is also not good. I think that organizers as a whole should be a lot more collaborative with each other. See the shit that like Fldwrk's doing. Fldwrk's on top for me. That's what I'm thinking. Let's see what else we got. Not much..</p>
+                </div>
+                <div class="post-images">
+                    <img src="IMG_2864_25.jpg" alt="Another picture of Niko">
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2 class="post-link">Rants</h2>
+            <div class="post-content hidden-content">
+                <div class="post-text">
+                    <h3>Concieted man thinks he's better than everyone</h3>
+                    <p>I'm gonna talk about something that's been bugging me for kind of a while. I'm kind of just disappointed with the world, and yeah, yeah, yeah, I know. Ooh, Guy thinks he's like above it all. Like yeah, I know how it sounds, but like, damn, it was supposed to be a lot different than this. I grew up always thinking I was not inferior, but just behind everyone, because I'm sped as fuck, whatever. I don't mean that in like a pity way, it's just how I viewed the world and I was okay with it because if anything, it felt like I just had so much to learn to the point where I was excited about it. I love learning about like science and shit. <br> <br> And I also know that like, I don't know at all. I'm very, very aware that there's so much more outside of my range of knowledge that I just haven't even began to touch. But it's like, I feel so much more mature, which is really strange to say, because anyone who's met me knows I'm very strange and mature wouldn't be the first word that comes to mind when talking about me but it feels like people are just unaware of their own actions. And it's left me just like looking at some of them saying like, what are you thinking? Like what are you doing? People are so not self aware and so just like narrow minded almost everyone thinks it's such a one lane, one path way. I see them as like, you know how in your maps app you could zoom in all the way? That's what I feel like a lot of people think. They think so narrow. And it shows in their actions, it shows in their work. <br> <br>A big thing for me started with my internship. Everyone there is supposed to be smarter than me, right? My grades aren't that good, They've never been good. I've always been a little bit slower than the rest, right? I shouldn't not have been the smartest one in the room. I shouldn't have. I'm not saying I'm the smartest one out of my job, right? I can name like 20 people who are a lot smarter than me there, so why am I the one doing the best?<br><br>And I feel like I've got it all figured out to a T already. Like I'm 20 and I'm, I confident that I've already reached enlightenment in some form, which is complete other topic that I'll write about some other day.<br><br>But I don't know.<br><br>People are just so much, I don't know. I know it sounds pretentious. I am very, very, very, very aware of how I sound, which is why I've never even dreamt of muttering these words to anyone in person. So at least in a website forum, it's like, oh, crazy little man on the screen, whatever, different than the crazy little man in real life.<br><br>But I don't know, going into the real world, especially this job, it's like, I've always grown up thinking I was the bare minimum for smartness, right? And everybody else that would be in a competitive environment would be smarter than me, and would be like more ahead of me. But I feel like I'm like 12 steps ahead of everyone, which again, pretentious and it sounds like, oh, you shut up, you're so smart, you're nothing. I know I'm nothing!! That's the thing!! Like I don't want to say the world so far isn't as challenging as I thought it would be, but that's honestly how it feels.
+
+I know I'm definitely delusional, but it doesn't feel that way. Because everything I say, I have reasons to say it all. Like I wouldn't be saying any of this if I didn't have reason to say it, this isn't something like I thought about it once and then I decided it was true. This is something that's been brewing for years at this point.
+
+I don't know, just schizo rambling disregard this all.</p>
+                </div>
+                <div class="post-images">
+                    <img src="IMG_2864_25.jpg" alt="Another picture of Niko">
+                </div>
+            </div>
+        </article>
+    </div>
+    <script>
+        let links = document.getElementsByClassName('post-link');
+
+        for (let i = 0; i < links.length; i++) {
+            links[i].addEventListener('click', function() {
+                let content = this.nextElementSibling;
+                if (content.style.display === "none") {
+                    content.style.display = "flex";
+                } else {
+                    content.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

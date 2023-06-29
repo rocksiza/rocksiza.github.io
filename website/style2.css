@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+  background: url('background3.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Orbitron', sans-serif;
+  color: #dedeb2;
+}
+
+nav {
+  background-color: #6e6744;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #cdb9dc;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #817a6d;
+}
+
+h1, h2 {
+  text-align: center;
+  padding: 15px 0;
+  color: #595d77;
+}
+
+.media-set {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.media-set-left .video-wrapper {
+  order: 1;
+}
+
+.media-set-left .media-description {
+  order: 2;
+  text-align: right;
+  width: 40%;
+  padding: 15px;
+}
+
+.media-set-right .video-wrapper {
+  order: 2;
+}
+
+.media-set-right .media-description {
+  order: 1;
+  text-align: left;
+  width: 40%;
+  padding: 15px;
+}
+
+.media-description {
+  background-color: #f6eeef;
+  color: #72557a;
+  border: 2px solid #837d9d;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.video-wrapper img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}

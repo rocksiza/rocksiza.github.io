@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     for(let i = 1; i <= 13; i++) {
         const img = document.createElement('img');
-        img.src = `phlraves/Courtyard/image (${i}).jpg`;
+        img.src = `phlraves/Courtyard/image (${i}).JPG`;
         img.addEventListener('click', function() {
             loadSingleImage(this.src);
         });

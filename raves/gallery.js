@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const returnButton = document.createElement('a');
     returnButton.textContent = 'Return';
     returnButton.className = 'pixel-button';
-    returnButton.href = 'galleryHome.html';
+    returnButton.href = '../galleryHome.html';
     container.appendChild(returnButton);
 });
 
@@ -36,6 +36,6 @@ function loadSingleImage(src) {
     const returnToMainButton = document.createElement('a');
     returnToMainButton.textContent = 'Return to Main Page';
     returnToMainButton.className = 'pixel-button';
-    returnToMainButton.href = 'galleryHome.html'; // Adjust this link to point to your main page.
+    returnToMainButton.href = '../galleryHome.html'; // Adjust this link to point to your main page.
     container.appendChild(returnToMainButton);
 }

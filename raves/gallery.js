@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const container = document.querySelector('.container');
 
-    for(let i = 1; i <= 338; i++) {
+    for(let i = 1; i <= 351; i++) {
         const img = document.createElement('img');
         img.src = `raveflyers/image (${i}).jpg`;
         img.addEventListener('click', function() {

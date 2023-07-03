@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const container = document.querySelector('.container');
 
-    for(let i = 1; i <= 61; i++) {
+    for(let i = 1; i <= 74; i++) {
         const img = document.createElement('img');
         img.src = `phlraves/image (${i}).jpg`;
         img.addEventListener('click', function() {

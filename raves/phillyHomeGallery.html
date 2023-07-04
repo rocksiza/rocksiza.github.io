@@ -3,6 +3,17 @@
     <head>
         <link rel="stylesheet" href="homegallery.css">
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <script>
+            window.onload = function() {
+                var images = [];
+                for (var i = 1; i <= 74; i++) {
+                    images.push("image (" + i + ").jpg");
+                }
+                var imgElement = document.getElementById("randomImage");
+                var randomImage = images[Math.floor(Math.random() * images.length)];
+                imgElement.src = "phlraves/" + randomImage;
+            };
+        </script>
     </head>
     <body>
         <div class="section" id="section1">
@@ -11,22 +22,7 @@
                 <p>Click here to view all Philly flyers</p>
                 <a href="phillyGallery.html" class="pixel-button">All Philly</a>
             </div>
-            <img src="phlraves/image (13).jpg" alt="Image 1">
-        </div>
-        <div class="section" id="section2">
-            <div class="text-section">
-                <img src="courtyard.jpg" alt="Image 1">
-                <p>Some of the best flyers from the Courtyard events</p>
-                <a href="courtyardGallery.html" class="pixel-button">Courtyard</a>
-            </div>
-        </div>
-        <div class="section" id="section4">
-            <div class="text-section">
-                <h1>611 Records</h1>
-                <p>Flyers from the legendary 611 Records</p>
-                <a href="611Gallery.html" class="pixel-button">611</a>
-            </div>
-            <img src="phlraves/image (15).jpg" alt="Image 1">
+            <img id="randomImage" alt="Random Image">
         </div>
         <div class="section" id="section5">
             <div class="text-section">
